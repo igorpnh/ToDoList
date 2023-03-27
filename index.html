@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Notes</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="note-header">
+            <div class="left-header">
+                <div class="note-input-container">
+                    <span class="input-span">
+                        <label class="label">Digite sua nota:</label>
+                        <input type="text" placeholder='Digite aqui sua nota' class="note-input"></textarea>
+                    </span>
+                </div>
+                <div class="checkbox-input">
+                    <label class="label">Prioridade:</label>
+                    <input type="checkbox" class="priority-input">
+                </div>
+                <button class="save-note">Salvar</button>
+
+            </div>
+            <div class='note-input-container right-header'>
+                <label class="label">Filtre suas notas:</label>
+                <select class='select-filter' name="note-filter">
+                    <option value="all">Todos</option>
+                    <option value="common">Comum</option>
+                    <option value="priority">Prioridade</option>
+                </select>
+            </div>
+            <button class="btn-color"><i class="fa-solid fa-sun fa-sun-color"></i></button>
+        </div>
+        <ul class="note-content-container">
+        </ul>
+    </section>
+    <script src="https://kit.fontawesome.com/e1f90afe4a.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

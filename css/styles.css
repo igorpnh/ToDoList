@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #202124;
+  width: 100%;
+  height: 100vh;
+}
+
+.container-light {
+  background-color: #dcdcd1 !important;
+}
+
+.note-header {
+  background-color: #303134;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.note-header-light {
+  background-color: #e1e6d3 !important;
+}
+
+.left-header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.note-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.note-input {
+  width: 20rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  background-color: #3c3d40;
+  outline: none;
+  border: 0.5px solid #3c3d40;
+  color: #fff;
+  height: 2rem;
+}
+
+.note-input-light {
+  background-color: #dcdcd1 !important;
+  border: 0.5px solid #dcdcd1 !important;
+  color: #000 !important;
+}
+
+.note-input:focus {
+  border: 0.5px solid #fff;
+}
+
+.note-input-light:focus {
+  border: 0.5px solid #000 !important;
+}
+
+.label {
+  font-size: 18px;
+  color: #8ab4f8;
+}
+
+.label-light {
+  color: #1a6ef7 !important;
+}
+
+.checkbox-input {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.save-note {
+  font-size: 18px;
+  height: 1.8rem;
+  border-radius: 5px;
+  background-color: #202124;
+  border: 1px solid #202124;
+  color: #8ab4f8;
+}
+
+.save-note-light {
+  background-color: #dcdcd1 !important;
+  border: 1px solid #dcdcd1 !important;
+  color: #3b4e6d !important;
+}
+
+.save-note:hover {
+  cursor: pointer;
+  border: 0.5px solid #fff;
+}
+
+.save-note-light:hover {
+  border: 0.5px solid #000 !important;
+}
+
+.select-filter {
+  font-size: 14px;
+  background-color: #202124;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.select-filter-light {
+  background-color: #dcdcd1 !important;
+  color: #000 !important;
+}
+
+.btn-color {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-moon-color {
+  color: #282a36;
+}
+
+.fa-sun-color {
+  color: #ffca28;
+}
+
+/* CONTENT ELEMENT STYLE */
+
+.note-content-container {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 0 1rem;
+  background-color: #202124;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.note-content-container-light {
+  background-color: #dcdcd1;
+
+}
+
+li {
+  height: fit-content;
+}
+
+.note {
+  background-color: #f1f3f4;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  word-break: break-all;
+  position: relative;
+}
+
+.delete-note {
+  font-size: 14px;
+  padding: 0.1rem;
+  width: fit-content;
+  border-radius: 5px;
+  border: none;
+  color: #8ab4f8;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.delete-note-light {
+  background-color: #dcdcd1 !important;
+  border: 1px solid #dcdcd1 !important;
+  color: #3b4e6d !important;
+}
+
+.delete-note:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.priority-note {
+  background-color: #282a36;
+  color: white;
+}
+
+.priority-note button {
+  background-color: inherit;
+  color: #000;
+}
+
+.fa-solid {
+  background-color: inherit;
+}
+
+.alert{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 15rem;
+  color: white;
+}
+
+
+@media (max-width: 540px) {
+  .note-content-container {
+    grid-template-columns: repeat(1, 1fr)
+  }
+
+  .note-header {
+    flex-direction: column;
+  }
+
+  .right-header {
+    width: 100%;
+  }
+
+
+}
